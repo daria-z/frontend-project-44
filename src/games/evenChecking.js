@@ -1,23 +1,18 @@
-import readlineSync from 'readline-sync';
+import askUser from './utils/askUser.js';
+import greeting from "./utils/greeting.js";
 
 export default () => {
-  console.log('Welcome to the Brain Games!');
-
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  const userName = greeting();
   console.log('\'yes\' is wrong answer ;(. Correct answer was \'no\'.');
 
   for (let i = 1; i <= 3; i += 1) {
-    const number = Math.floor(Math.random() * 50);
-    console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-    if (userAnswer !== correctAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;( .Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
+    const questionNumber = Math.floor(Math.random() * 50);
+    const correctAnswer = questionNumber % 2 === 0 ? 'yes' : 'no';
+
+    if (askUser(userName, questionNumber, correctAnswer) === false) {
       return;
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
