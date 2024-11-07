@@ -5,7 +5,7 @@ export default (name, question, correctAnswer) => {
 
   const userAnswer = readlineSync.question('Your answer: ');
 
-  if (userAnswer !== correctAnswer) {
+  if (userAnswer !== correctAnswer.toString()) {
     console.log(`'${userAnswer}' is wrong answer ;( .Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${name}!`);
     return false;
