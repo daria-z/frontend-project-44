@@ -14,7 +14,7 @@ export default () => {
     const number2 = generateRandomNumber(1, 10);
     const symbol = generateOperator();
     const question = `${number1} ${symbol} ${number2}`;
-    const answer = eval(question);
+    const answer = eval(question).toSring();
 
     if (askUser(userName, question, answer) === false) {
       return;
