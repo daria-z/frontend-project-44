@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 import readlineSync from 'readline-sync';
 
 export default (rules, logic) => {

@@ -1,5 +1,6 @@
-import generateRandomNumber from "../utils/generateRandomNumber.js";
-import generateOperator from "../utils/generateOperator.js";
+/* eslint-disable no-eval */
+import generateRandomNumber from '../utils/generateRandomNumber.js';
+import generateOperator from '../utils/generateOperator.js';
 
 export const rule = 'What is the result of the expression?';
 
@@ -11,6 +12,4 @@ export const logic = () => {
   const answer = eval(question);
 
   return [question, answer];
-}
-
-
+};
