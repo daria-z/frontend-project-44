@@ -17,12 +17,7 @@ To get started, follow these steps:
 
 2. Install dependencies:
    ```bash
-   npm install
-   ```
-
-3. Start the project:
-   ```bash
-   npm start
+   make install
    ```
 
 ### 🛠️ **Makefile**
