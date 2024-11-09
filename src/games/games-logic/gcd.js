@@ -4,8 +4,10 @@ import generateRandomNumber from '../utils/generateRandomNumber.js';
 export const rule = 'Find the greatest common divisor of given numbers.';
 
 export const logic = () => {
-  const number1 = generateRandomNumber(1, 20);
-  const number2 = generateRandomNumber(1, 20);
+  const minNumber = 1;
+  const maxNumber = 20;
+  const number1 = generateRandomNumber(minNumber, maxNumber);
+  const number2 = generateRandomNumber(minNumber, maxNumber);
 
   const nod = (a, b) => {
     while (a !== b) {
