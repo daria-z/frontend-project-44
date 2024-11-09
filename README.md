@@ -39,7 +39,7 @@ To get started, follow these steps:
 - **`make brain-even`**
 [![asciicast](https://asciinema.org/a/5GjH4pyYKYdYAVe1PHjN32RS8.svg)](https://asciinema.org/a/5GjH4pyYKYdYAVe1PHjN32RS8)
 
-- **`make brain-calculator`**
+- **`make brain-calc`**
 [![asciicast](https://asciinema.org/a/ltJ1hPhVnQJ4o8p6JR1A2zEYH.svg)](https://asciinema.org/a/ltJ1hPhVnQJ4o8p6JR1A2zEYH)
 
 - **`make brain-progression`**

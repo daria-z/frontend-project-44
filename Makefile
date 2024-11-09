@@ -13,8 +13,8 @@ brain-games:
 brain-even:
 	node bin/brain-even.js
 
-brain-calculator:
-	node bin/brain-calculator.js
+brain-calc:
+	node bin/brain-calc.js
 
 brain-progression:
 	node bin/brain-progression.js
