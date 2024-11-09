@@ -3,7 +3,7 @@ import generateOperator from "../utils/generateOperator.js";
 
 export const rule = 'What is the result of the expression?';
 
-export const innerlogic = () => {
+export const logic = () => {
   const number1 = generateRandomNumber(1, 10);
   const number2 = generateRandomNumber(1, 10);
   const symbol = generateOperator();
