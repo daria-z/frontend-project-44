@@ -1,4 +1,4 @@
-export const rule = '\'yes\' is wrong answer ;(. Correct answer was \'no\'.';
+export const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export const logic = () => {
   const questionNumber = Math.floor(Math.random() * 50);
