@@ -15,7 +15,7 @@ export const logic = () => {
     progression.push(nextNumber);
   }
   const correctAnswer = progression[missedPosition];
-  progression[missedPosition] = '...';
+  progression[missedPosition] = '..';
 
   return [progression.join(' '), correctAnswer];
 };
