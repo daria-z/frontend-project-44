@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { calc } from '../src/cli.js';
+import gamesWrapper from '../src/games/utils/gamesWrapper.js';
+import { rule, logic } from '../src/games/brain-calc.js';
 
-calc();
+gamesWrapper(rule, logic);

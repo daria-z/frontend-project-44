@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { gcd } from '../src/cli.js';
+import gamesWrapper from '../src/games/utils/gamesWrapper.js';
+import { rule, logic } from '../src/games/brain-gcd.js';
 
-gcd();
+gamesWrapper(rule, logic);
