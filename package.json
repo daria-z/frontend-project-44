@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/daria-z/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/daria-z/frontend-project-44/actions)",
+  "description": "It is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered a pass. Incorrect answers end the game and offer to play it again.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -16,7 +16,7 @@
     "brain-progression": "bin/brain-progression.js"
 
   },
-  "author": "",
+  "author": "Daria Zakirova",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
