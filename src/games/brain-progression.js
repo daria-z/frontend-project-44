@@ -1,8 +1,9 @@
+import gamesWrapper from './utils/gamesWrapper.js';
 import generateRandomNumber from './utils/generateRandomNumber.js';
 
-export const rule = 'What number is missing in the progression?';
+const rule = 'What number is missing in the progression?';
 
-export const logic = () => {
+const logic = () => {
   const progressionLength = 10;
   const maxProgressionDiff = 5;
   const missedPosition = generateRandomNumber(1, progressionLength);
@@ -18,4 +19,8 @@ export const logic = () => {
   progression[missedPosition] = '..';
 
   return [progression.join(' '), correctAnswer];
+};
+
+export default () => {
+  gamesWrapper(rule, logic);
 };

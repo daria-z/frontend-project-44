@@ -1,9 +1,10 @@
 /* eslint-disable no-param-reassign */
+import gamesWrapper from './utils/gamesWrapper.js';
 import generateRandomNumber from './utils/generateRandomNumber.js';
 
-export const rule = 'Find the greatest common divisor of given numbers.';
+const rule = 'Find the greatest common divisor of given numbers.';
 
-export const logic = () => {
+const logic = () => {
   const minNumber = 1;
   const maxNumber = 20;
   const number1 = generateRandomNumber(minNumber, maxNumber);
@@ -23,4 +24,8 @@ export const logic = () => {
   const answer = nod(number1, number2);
 
   return [question, answer];
+};
+
+export default () => {
+  gamesWrapper(rule, logic);
 };

@@ -1,10 +1,11 @@
 /* eslint-disable no-eval */
+import gamesWrapper from './utils/gamesWrapper.js';
 import generateRandomNumber from './utils/generateRandomNumber.js';
 import generateOperator from './utils/generateOperator.js';
 
-export const rule = 'What is the result of the expression?';
+const rule = 'What is the result of the expression?';
 
-export const logic = () => {
+const logic = () => {
   const minNumber = 1;
   const maxNumber = 10;
 
@@ -15,4 +16,8 @@ export const logic = () => {
   const answer = eval(question);
 
   return [question, answer];
+};
+
+export default () => {
+  gamesWrapper(rule, logic);
 };

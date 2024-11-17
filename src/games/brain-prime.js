@@ -1,8 +1,9 @@
+import gamesWrapper from './utils/gamesWrapper.js';
 import generateRandomNumber from './utils/generateRandomNumber.js';
 
-export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const logic = () => {
+const logic = () => {
   const maxPrimeNumber = 10;
   const number = generateRandomNumber(1, maxPrimeNumber);
   const isPrime = () => {
@@ -19,4 +20,8 @@ export const logic = () => {
   };
 
   return [number, isPrime(number)];
+};
+
+export default () => {
+  gamesWrapper(rule, logic);
 };
