@@ -8,18 +8,20 @@ const logic = () => {
   const number = generateRandomNumber(1, maxPrimeNumber);
   const isPrime = () => {
     if (number <= 1) {
-      return 'no';
+      return true;
     }
 
     for (let i = 2; i < number; i += 1) {
       if (number % i === 0) {
-        return 'no';
+        return false;
       }
     }
-    return 'yes';
+    return true;
   };
 
-  return [number, isPrime(number)];
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+
+  return [number, correctAnswer];
 };
 
 export default () => {

@@ -6,7 +6,9 @@ const logic = () => {
   const maxNumber = 50;
 
   const questionNumber = Math.floor(Math.random() * maxNumber);
-  const correctAnswer = questionNumber % 2 === 0 ? 'yes' : 'no';
+
+  const isEven = (num) => num % 2 === 0;
+  const correctAnswer = isEven(questionNumber) ? 'yes' : 'no';
 
   return [questionNumber, correctAnswer];
 };
