@@ -1,4 +1,4 @@
-import gamesWrapper from './utils/gamesWrapper.js';
+import gamesWrapper from '../utils/gamesWrapper.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 

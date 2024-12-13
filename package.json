@@ -2,7 +2,6 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "It is a set of five console games. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered a pass. Incorrect answers end the game and offer to play it again.",
-  "main": "index.js",
   "type": "module",
   "bin": {
     "brain-games": "bin/brain-games.js",

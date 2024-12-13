@@ -1,7 +1,7 @@
 /* eslint-disable no-eval */
-import gamesWrapper from './utils/gamesWrapper.js';
-import generateRandomNumber from './utils/generateRandomNumber.js';
-import generateOperator from './utils/generateOperator.js';
+import gamesWrapper from '../utils/gamesWrapper.js';
+import generateRandomNumber from '../utils/generateRandomNumber.js';
+import generateOperator from '../utils/generateOperator.js';
 
 const rule = 'What is the result of the expression?';
 

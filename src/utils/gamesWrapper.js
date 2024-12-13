@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import readlineSync from 'readline-sync';
 
 const questionsCount = 3;
@@ -20,7 +19,7 @@ export default (rules, logic) => {
     if (userAnswer !== correctAnswer.toString()) {
       console.log(`'${userAnswer}' is wrong answer ;( .Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      return false;
+      return;
     }
 
     console.log('Correct!');

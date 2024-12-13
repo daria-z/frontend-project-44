@@ -1,5 +1,5 @@
-import gamesWrapper from './utils/gamesWrapper.js';
-import generateRandomNumber from './utils/generateRandomNumber.js';
+import gamesWrapper from '../utils/gamesWrapper.js';
+import generateRandomNumber from '../utils/generateRandomNumber.js';
 
 const rule = 'What number is missing in the progression?';
 

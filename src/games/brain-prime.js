@@ -1,5 +1,5 @@
-import gamesWrapper from './utils/gamesWrapper.js';
-import generateRandomNumber from './utils/generateRandomNumber.js';
+import gamesWrapper from '../utils/gamesWrapper.js';
+import generateRandomNumber from '../utils/generateRandomNumber.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
